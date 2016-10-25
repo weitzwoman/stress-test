@@ -14,7 +14,7 @@
           <h2>Answer a few questions for a psychological assessment!</h2>
         </div>
           <form id="stressTest">
-          <div class="panel panel-success" id="stressQuestions">
+          <div class="panel panel-primary" id="stressQuestions">
             <div class="panel panel-heading">
             <p>
               Please answer the following questions regarding stress warning signs. Check all that apply:
@@ -30,7 +30,7 @@
             </div>
           </div>
 
-          <div class="panel panel-success" id="symptomsQuestions">
+          <div class="panel panel-primary" id="symptomsQuestions">
             <div class="panel panel-heading">
             <p>
               The following list contains symptoms of stress. Check all that you've experienced recently:
@@ -46,7 +46,7 @@
             </div>
           </div>
 
-          <div class="panel panel-success" id="techniquesQuestions">
+          <div class="panel panel-primary" id="techniquesQuestions">
             <div class="panel panel-heading">
               <p>
                 Please answer the following questions regarding your stress management techniques. "When I'm stressed I: (Check all that apply)"
@@ -62,20 +62,25 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div><!-- input form -->
-      <div class="well" id="output">
-        <div id="highStress">
-          <h3>You have these symptoms</h3>
-          <span id="highStressSymptoms"></span>
-          <h3>You have these stress signs</h3>
-          <span id="highStressStressors"></span>
-          <h3>Good job on using these coping mechanisms</h3>
-          <span id="highStressTechniques"></span>
+      <div id="results" class="">
+        <div class="row">
+            <div class="col-md-4">
+              <h3>You have these symptoms</h3>
+              <span id="symptoms"></span>
+            </div>
+            <div class="col-md-4">
+              <h3>You have these stress signs</h3>
+              <span id="stressors"></span>
+            </div>
+            <div class="col-md-4">
+              <h3>Good job on using these coping mechanisms</h3>
+              <span id="techniques"></span>
+            </div>
+          </div>
         </div>
-
-      </div>
     </div> <!-- container -->
   </body>
 </html>
