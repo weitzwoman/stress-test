@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Stress Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="inputForm">
+        <div class="jumbotron">
+          <h2>Answer a few questions for a psychological assessment!</h2>
+        </div>
+          <form id="stressTest">
+          <div class="panel panel-success" id="stressQuestions">
+            <div class="panel panel-heading">
+            <p>
+              Please answer the following questions regarding your daily stress levels. Check all that apply:
+            </p>
+            </div>
+            <div class="form-group panel panel-body">
+              <input type="checkbox" name="stress" value="sleep"> I often don't sleep well<br>
+              <input type="checkbox" name="stress" value="politics"> I worry about the election<br>
+              <input type="checkbox" name="stress" value="neighborhood"> I live in a dangerous neighborhood <br>
+              <input type="checkbox" name="stress" value="recent death"> I recently had a death in the family.<br>
+              <input type="checkbox" name="stress" value="job"> I recently started a new job.<br>
+              <input type="checkbox" name="stress" value="hunger"> I am hungry right now.<br>
+            </div>
+          </div>
+
+          <div class="panel panel-success" id="managementQuestions">
+            <div class="panel panel-heading">
+              <p>
+                Please answer the following questions regarding your stress management techniques. "When I'm stressed I: (Check all that apply)"
+              </p>
+            </div>
+            <div class="form-group panel panel-body">
+              <input type="checkbox" name="management" value="excercise"> Excercise<br>
+              <input type="checkbox" name="management" value="nap"> Take a nap<br>
+              <input type="checkbox" name="management" value="eat"> Eat ice cream<br>
+              <input type="checkbox" name="management" value="read"> Read a book<br>
+              <input type="checkbox" name="management" value="dogs"> Pet a dog<br>
+              <input type="checkbox" name="management" value="friends"> See my friends<br>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div><!-- input form -->
+      <div class="well" id="output">
+        <p>
+          Your stressors include:
+        </p>
+        <span id="outputStress"></span>
+        <p class="management">
+          Your management techniques include:
+        </p>
+        <span id="outputManagement" class="management"></span>
+      </div>
+    </div> <!-- container -->
+  </body>
+</html>
