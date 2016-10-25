@@ -17,32 +17,48 @@
           <div class="panel panel-success" id="stressQuestions">
             <div class="panel panel-heading">
             <p>
-              Please answer the following questions regarding your daily stress levels. Check all that apply:
+              Please answer the following questions regarding stress warning signs. Check all that apply:
             </p>
             </div>
             <div class="form-group panel panel-body">
               <input type="checkbox" name="stress" value="sleep"> I often don't sleep well<br>
-              <input type="checkbox" name="stress" value="politics"> I worry about the election<br>
-              <input type="checkbox" name="stress" value="neighborhood"> I live in a dangerous neighborhood <br>
-              <input type="checkbox" name="stress" value="recent death"> I recently had a death in the family.<br>
-              <input type="checkbox" name="stress" value="job"> I recently started a new job.<br>
-              <input type="checkbox" name="stress" value="hunger"> I am hungry right now.<br>
+              <input type="checkbox" name="stress" value="energy"> I often feel a lack of energy<br>
+              <input type="checkbox" name="stress" value="decisions"> I have a hard time making decicions<br>
+              <input type="checkbox" name="stress" value="drugs"> I feel I overindulge in alcohol or drugs<br>
+              <input type="checkbox" name="stress" value="eat"> I regularly feel that I overeat<br>
+              <input type="checkbox" name="stress" value="emotion"> I often get overly emotional<br>
             </div>
           </div>
 
-          <div class="panel panel-success" id="managementQuestions">
+          <div class="panel panel-success" id="symptomsQuestions">
+            <div class="panel panel-heading">
+            <p>
+              The following list contains symptoms of stress. Check all that you've experienced recently:
+            </p>
+            </div>
+            <div class="form-group panel panel-body">
+              <input type="checkbox" name="symptoms" value="sleep"> Sleep problems<br>
+              <input type="checkbox" name="symptoms" value="headache"> Headaches<br>
+              <input type="checkbox" name="symptoms" value="tension"> Muscle tension<br>
+              <input type="checkbox" name="symptoms" value="pain"> Chest pain<br>
+              <input type="checkbox" name="symptoms" value="fatigue"> Fatigue<br>
+              <input type="checkbox" name="symptoms" value="sex"> Change in sex drive<br>
+            </div>
+          </div>
+
+          <div class="panel panel-success" id="techniquesQuestions">
             <div class="panel panel-heading">
               <p>
                 Please answer the following questions regarding your stress management techniques. "When I'm stressed I: (Check all that apply)"
               </p>
             </div>
             <div class="form-group panel panel-body">
-              <input type="checkbox" name="management" value="excercise"> Excercise<br>
-              <input type="checkbox" name="management" value="nap"> Take a nap<br>
-              <input type="checkbox" name="management" value="eat"> Eat ice cream<br>
-              <input type="checkbox" name="management" value="read"> Read a book<br>
-              <input type="checkbox" name="management" value="dogs"> Pet a dog<br>
-              <input type="checkbox" name="management" value="friends"> See my friends<br>
+              <input type="checkbox" name="techniques" value="excercise"> Excercise<br>
+              <input type="checkbox" name="techniques" value="nap"> Take a nap<br>
+              <input type="checkbox" name="techniques" value="eat"> Eat a salad<br>
+              <input type="checkbox" name="techniques" value="read"> Read a book<br>
+              <input type="checkbox" name="techniques" value="dogs"> Pet a dog<br>
+              <input type="checkbox" name="techniques" value="friends"> See my friends<br>
             </div>
           </div>
 
@@ -50,14 +66,15 @@
         </form>
       </div><!-- input form -->
       <div class="well" id="output">
-        <p>
-          Your stressors include:
-        </p>
-        <span id="outputStress"></span>
-        <p class="management">
-          Your management techniques include:
-        </p>
-        <span id="outputManagement" class="management"></span>
+        <div id="highStress">
+          <h3>You have these symptoms</h3>
+          <span id="highStressSymptoms"></span>
+          <h3>You have these stress signs</h3>
+          <span id="highStressStressors"></span>
+          <h3>Good job on using these coping mechanisms</h3>
+          <span id="highStressTechniques"></span>
+        </div>
+
       </div>
     </div> <!-- container -->
   </body>
